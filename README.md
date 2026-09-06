@@ -3,9 +3,9 @@
 This is a collection of GraphQL clients which support queries, mutations and subscriptions.
 
 It specifically targets the 
-[bareASGI GraphQL](https://github.com/rob-blackbourn/bareASGI-graphql-next)
+[bareASGI GraphQL](https://github.com/bareASGI/bareASGI-graphql)
 module from the
-[bareASGI](https://github.com/rob-blackbourn/bareASGI)
+[bareASGI](https://github.com/bareASGI/bareASGI)
 python web framework. This framework provides two novel features.
 
 * Server side identification of subscriptions (by returning a 201 if the query was a subscription),
@@ -153,7 +153,7 @@ endpoint. For readable streams, no redirection is necessary.
 
 The `graphqlWsClient` can be used for queries, mutations, or subscriptions when using
 the 
-[bareASGI-graphql-next server](https://github.com/rob-blackbourn/bareasgi-graphql-next)
+[bareASGI-graphql server](https://github.com/bareASGI/bareasgi-graphql)
 server, using web sockets as the underlying subscription transport.
 
 ```js
@@ -201,7 +201,7 @@ protocol which is supported by all major GraphQL web servers.
 The `graphqlEventSourceClient` function uses an `EventSource` as the subscription
 transport. It is more efficient than the WebSocket transport, but is only supported
 by the 
-[bareASGI-graphql-next server](https://github.com/rob-blackbourn/bareasgi-graphql-next)
+[bareASGI-graphql server](https://github.com/bareASGI/bareasgi-graphql)
 server. 
 The underlying `EventSource` transport requires the subscription query and parameters
 to be passed in the url as a query string which can be problematic for large queries.
@@ -211,7 +211,7 @@ to be passed in the url as a query string which can be problematic for large que
 The `graphqlStreamClient` uses a streaming fetch with `ReadableStreams` as the
 subscription transport. This is the most efficient
 transport, but is only supported by the
-[bareASGI-graphql-next server](https://github.com/rob-blackbourn/bareasgi-graphql-next)
+[bareASGI-graphql server](https://github.com/bareASGI/bareasgi-graphql)
 server. The request method is `POST` so large queries are not a problem.
 
 ## Installation

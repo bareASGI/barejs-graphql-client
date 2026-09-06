@@ -10,8 +10,8 @@
   ],
   "main": "dist/index.js",
   "module": "dist/index.ems.js",
-  "repository": "git@github.com:rob-blackbourn/barejs-graphql-client.git",
-  "homepage": "https://github.com/rob-blackbourn/barejs-graphql-client",
+  "repository": "git@github.com:bareASGI/barejs-graphql-client.git",
+  "homepage": "https://github.com/bareASGI/barejs-graphql-client",
   "author": "Rob Blackbourn <rob.blackbourn@gmail.com>",
   "license": "Apache-2.0",
   "scripts": {
